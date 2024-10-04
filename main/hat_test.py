@@ -3,7 +3,7 @@ import numpy as np
 
 # 腐蚀测试
 # 读取图像
-img = cv.imread("img/niupi.png")
+img = cv.imread("../img/niupi.png")
 cv.imshow('fushi', img)
 cv.waitKey(0)
 cv.destroyAllWindows()

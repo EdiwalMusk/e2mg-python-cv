@@ -2,8 +2,8 @@ import cv2 as cv
 
 from common import cv_show
 
-img = cv.imread("img/liuyifei.jpeg")
-img_face = cv.imread("img/liuyifei_face.jpeg")
+img = cv.imread("../img/liuyifei.jpeg")
+img_face = cv.imread("../img/liuyifei_face.jpeg")
 
 h, w = img_face.shape[:2]
 print(h, w)

@@ -7,7 +7,7 @@ def cv_show(name, image):
     cv.waitKey(0)
     cv.destroyAllWindows()
 
-img = cv.imread("img/niupi.png")
+img = cv.imread("../img/niupi.png")
 cv_show("niupi.png", img)
 
 sobelx = cv.Sobel(img, cv.CV_64F, 1, 0, ksize=3)

@@ -3,8 +3,8 @@ import numpy as np
 
 from common import cv_show
 
-img = cv.imread("img/chongfu.jpeg")
-img_face = cv.imread("img/chongfu_unit.jpeg")
+img = cv.imread("../img/chongfu.jpeg")
+img_face = cv.imread("../img/chongfu_unit.jpeg")
 
 h, w = img_face.shape[:2]
 print(h, w)

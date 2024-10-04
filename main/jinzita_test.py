@@ -4,7 +4,7 @@ from common import cv_show
 
 # 金字塔测试
 # 读取图像
-img = cv.imread("img/cat.jpg")
+img = cv.imread("../img/cat.jpg")
 cv_show('cat', img)
 print(img.shape)
 

@@ -7,7 +7,7 @@ def cv_show(name, image):
     cv.waitKey(0)
     cv.destroyAllWindows()
 
-img = cv.imread("img/niupi.png")
+img = cv.imread("../img/niupi.png")
 cv_show("niupi.png", img)
 
 # canny边缘检测

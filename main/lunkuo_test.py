@@ -2,9 +2,9 @@ import cv2 as cv
 
 from common import cv_show
 
-# 轮廓近似
+# 轮廓检测
 # 读取图像
-img = cv.imread("img/lunkuo.png")
+img = cv.imread("../img/tingchechang.png")
 print(img.shape)
 cv_show('img', img)
 
@@ -25,14 +25,5 @@ res = cv.drawContours(draw_img, contours, -1, (0, 0, 255), 2)
 cv_show('res', res)
 
 cnt = contours[0]
-draw_img = img.copy()
-res = cv.drawContours(draw_img, cnt, -1, (0, 0, 255), 2)
-cv_show('cnt0', res)
-
-# 轮廓近似
-epsilon = 0.1 * cv.arcLength(cnt, True)
-approx = cv.approxPolyDP(cnt, epsilon, True)
-
-draw_img = img.copy()
-res = cv.drawContours(draw_img, [approx], -1, (0, 0, 255), 2)
-cv_show('res', res)
+print(cv.contourArea(cnt))
+print(cv.arcLength(cnt, True))

@@ -1,7 +1,7 @@
 import cv2 as cv
 
 # 读取图像
-img = cv.imread("img/cat.jpg")
+img = cv.imread("../img/cat.jpg")
 print(img.shape)
 
 cat = img[0:50, 0:200]
