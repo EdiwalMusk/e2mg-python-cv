@@ -2,7 +2,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
-from main.common import cv_show
+from main.utils.common import cv_show
 
 # 读取图像
 img = cv.imread("../img/cat.jpg")

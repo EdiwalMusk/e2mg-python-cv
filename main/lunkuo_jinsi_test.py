@@ -1,6 +1,6 @@
 import cv2 as cv
 
-from common import cv_show
+from main.utils.common import cv_show
 
 # 轮廓近似
 # 读取图像

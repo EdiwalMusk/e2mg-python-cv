@@ -1,6 +1,6 @@
 import cv2 as cv
 
-from common import cv_show
+from main.utils.common import cv_show
 
 img = cv.imread("../img/liuyifei.jpeg")
 img_face = cv.imread("../img/liuyifei_face.jpeg")

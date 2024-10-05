@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-from common import cv_show
+from main.utils.common import cv_show
 
 img = cv.imread("../img/chongfu.jpeg")
 img_face = cv.imread("../img/chongfu_unit.jpeg")

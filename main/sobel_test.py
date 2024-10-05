@@ -1,11 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-# 边缘提取
-def cv_show(name, image):
-    cv.imshow(name, image)
-    cv.waitKey(0)
-    cv.destroyAllWindows()
+from main.utils.common import cv_show
 
 img = cv.imread("../img/niupi.png")
 cv_show("niupi.png", img)
