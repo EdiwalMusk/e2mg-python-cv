@@ -3,8 +3,8 @@ import cv2 as cv
 from Stitcher import Stitcher
 from main.utils.common import cv_show
 
-imageA = cv.imread("../../img/image_right.png")
-imageB = cv.imread("../../img/image_left.png")
+imageA = cv.imread("../../img/concat/msg_right.png")
+imageB = cv.imread("../../img/concat/msg_left.png")
 
 stitcher = Stitcher()
 (result, vis) = stitcher.stitch([imageA, imageB], showMatches=True)
